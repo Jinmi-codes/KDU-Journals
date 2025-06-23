@@ -1,0 +1,352 @@
+
+
+@media (max-width: 996px) {
+
+    #NavBar{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    .NavBarItem-Links{
+        ol{
+            padding-left: 1px;
+            display: none;
+        }
+        img{
+            max-width: 200px;
+        }   
+    }
+
+    .NavBarItem-Logo{
+        
+        img{
+            margin-left: 40%;
+            max-width: 190px;
+        }
+    }
+
+    .RoughClass{
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+    }
+
+    .centrdham{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .SectionContainer{
+        max-width: 90%;
+    
+        .kl{
+            div{
+                height: 320px;
+                background-image: url(/Assets/Images/KDU1430.jpg);
+                background-size: 100%;
+           
+                
+                background-repeat: no-repeat;
+            }
+            // height: 320px;
+            background-image: url(/Assets/Images/KDU1430.jpg);
+            background-size: 100%;
+       
+            
+            background-repeat: no-repeat;
+            
+            p{
+            
+               padding: 20px;
+               font-size: 0.9rem;  
+               color: black; 
+               text-align: center;
+               background: white;  
+               border-bottom: 1px rgba(0, 0, 0, 0.26) solid;
+            }
+        }
+
+        .journalCont{
+            transition: transform 0.3s ease-in-out;
+
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            background: white;
+            padding: 10px;
+            border-bottom:1px rgba(0, 0, 0, 0.26) solid;
+
+            margin-bottom: 10px;
+            img{
+                max-height: 14rem ;
+            }
+            div{
+                display: flex;
+
+               
+                justify-content: center;
+                flex-direction: column;
+                h1{
+                    font-size: 0.875rem;
+                    color: blue;
+                }
+                p{
+                    font-size: 0.875rem;
+                }
+            }
+
+
+            .spanObso{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: baseline;
+                gap: 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                .span1{
+                    background:blue;
+                    transition: background-color 0.5s ease-in-out;
+                    padding: 5px;
+                    color: white;
+                }
+                .span1:hover{
+                    background-color: rgba(0, 0, 255, 0.514);
+                }
+            }
+        }
+
+        .journalCont:hover{
+            transform: scale(1.01);
+        }
+    }
+}
+
+@media (min-width: 996px) {
+    #NavBar{
+        padding-top: 30px;
+        padding-bottom: 10px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        justify-content: flex-start;
+    
+    }
+
+    .NavBarItem-Logo{
+        img{
+            max-width: 400px;
+        }
+    }
+
+    .NavBarItem-Links{
+        ol{
+            display: flex;
+        }}
+
+
+    .icon{
+        display: none;
+    }
+}
+
+
+@media (min-width:1024px) {
+    #NavBar{
+       
+        padding-bottom: 10px;
+        padding-left: 0px;
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    
+    }
+}
+
+@media (min-width:1224px){
+    .SectionContainer{
+        max-width: 900px;
+    
+        .kl{
+            div{
+                height: 320px;
+                background-image: url(/Assets/Images/KDU1430.jpg);
+                background-size: 100%;
+           
+                
+                background-repeat: no-repeat;
+            }
+            // height: 320px;
+            background-image: url(/Assets/Images/KDU1430.jpg);
+            background-size: 100%;
+       
+            
+            background-repeat: no-repeat;
+            
+            p{
+            
+               padding: 20px;
+               font-size: 0.9rem;  
+               color: black; 
+               text-align: center;
+               background: white;  
+               border-bottom: 1px rgba(0, 0, 0, 0.26) solid;
+            }
+        }
+
+        .journalCont{
+            transition: transform 0.3s ease-in-out;
+
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            background: white;
+            padding: 10px;
+            border-bottom:1px rgba(0, 0, 0, 0.26) solid;
+
+            margin-bottom: 10px;
+            img{
+                max-height: 14rem ;
+            }
+            div{
+                display: flex;
+
+               
+                justify-content: center;
+                flex-direction: column;
+                h1{
+                    font-size: 0.875rem;
+                    color: blue;
+                }
+                p{
+                    font-size: 0.875rem;
+                }
+            }
+
+
+            .spanObso{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: baseline;
+                gap: 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                .span1{
+                    background:blue;
+                    transition: background-color 0.5s ease-in-out;
+                    padding: 5px;
+                    color: white;
+                }
+                .span1:hover{
+                    background-color: rgba(0, 0, 255, 0.514);
+                }
+            }
+        }
+
+        .journalCont:hover{
+            transform: scale(1.01);
+        }
+    }
+}
+
+@media (max-width:1224px){
+    .SectionContainer{
+        max-width: 700px;
+    
+        .kl{
+            div{
+                height: 320px;
+                background-image: url(/Assets/Images/KDU1430.jpg);
+                background-size: 100%;
+           
+                
+                background-repeat: no-repeat;
+            }
+            // height: 320px;
+            background-image: url(/Assets/Images/KDU1430.jpg);
+            background-size: 100%;
+       
+            
+            background-repeat: no-repeat;
+            
+            p{
+            
+               padding: 20px;
+               font-size: 0.9rem;  
+               color: black; 
+               text-align: center;
+               background: white;  
+               border-bottom: 1px rgba(0, 0, 0, 0.26) solid;
+            }
+        }
+
+        .journalCont{
+            transition: transform 0.3s ease-in-out;
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            background: white;
+            padding: 10px;
+            border-bottom:1px rgba(0, 0, 0, 0.26) solid;
+
+            margin-bottom: 10px;
+            img{
+                max-height: 14rem ;
+            }
+            div{
+                display: flex;
+
+               
+                justify-content: center;
+                flex-direction: column;
+                h1{
+                    font-size: 0.875rem;
+                    color: blue;
+                }
+                p{
+                    font-size: 0.875rem;
+                }
+            }
+
+
+            .spanObso{
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: baseline;
+                gap: 10px;
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                .span1{
+                    background:blue;
+                    transition: background-color 0.5s ease-in-out;
+                    padding: 5px;
+                    color: white;
+                }
+                .span1:hover{
+                    background-color: rgba(0, 0, 255, 0.514);
+                }
+            }
+        }
+
+        .journalCont:hover{
+            transform: scale(1.01);
+        }
+    }
+}

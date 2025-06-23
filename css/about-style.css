@@ -1,0 +1,384 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Rubik", serif;
+}
+
+:root {
+    /* Primary colors */
+    --primary-color: #0A3D62;
+    --primary-light: #2980b9;
+    --primary-dark: #05223A;
+    
+    /* Secondary colors */
+    --secondary-color: #1E3799;
+    --secondary-light: #4a69bd;
+    --secondary-dark: #0c2461;
+    
+    /* Accent colors */
+    --accent-color: #F79F1F;
+    --accent-light: #fbc531;
+    --accent-dark: #e58e1a;
+    
+    /* Neutral colors */
+    --neutral-100: #f5f6fa;
+    --neutral-200: #dcdde1;
+    --neutral-300: #7f8fa6;
+    --neutral-400: #353b48;
+    --neutral-500: #2f3640;
+    
+    /* Spacing */
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 40px;
+    --space-6: 48px;
+    
+    /* Typography */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9)), url(/Assets/Images/kduComputingJournal.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-color: var(--neutral-100);
+}
+
+.main-nav {
+    padding: var(--space-2);
+    display: flex;
+    flex-direction: column;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.main-nav .first {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-2);
+    padding: 0 var(--space-2);
+}
+
+.main-nav .first span {
+    color: white;
+    background: var(--primary-color);
+    padding: var(--space-1) var(--space-2);
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.main-nav .first span:hover {
+    background: white;
+    color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color);
+    transform: translateY(-2px);
+}
+
+.main-nav .second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4) var(--space-3);
+}
+
+.main-nav .second img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.main-nav .second img:hover {
+    transform: scale(1.02);
+}
+
+.main-nav .third {
+    margin-top: var(--space-4);
+    position: relative;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: var(--space-2);
+    position: absolute;
+    right: var(--space-2);
+    top: calc(-1 * var(--space-2));
+}
+
+.hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.main-nav .third ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-3);
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.main-nav .third ol li a {
+    text-decoration: none;
+    font-size: var(--text-base);
+    font-weight: 600;
+    padding: var(--space-1) var(--space-2);
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.main-nav .third ol li a:hover {
+    background-color: var(--primary-dark);
+    color: white;
+}
+
+.about-kujas {
+    padding: var(--space-5) var(--space-2);
+    background: white;
+}
+
+.about-kujas .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 var(--space-2);
+}
+
+.about-kujas .content {
+    background: white;
+    padding: var(--space-4);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-kujas h1 {
+    font-size: var(--text-3xl);
+    margin-bottom: var(--space-4);
+    color: var(--primary-color);
+}
+
+.about-kujas .section {
+    margin-bottom: var(--space-5);
+}
+
+.about-kujas h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-3);
+    color: var(--primary-color);
+}
+
+.about-kujas p {
+    font-size: var(--text-lg);
+    line-height: 1.6;
+    margin-bottom: var(--space-3);
+    color: var(--neutral-400);
+}
+
+.about-kujas ul {
+    list-style-type: disc;
+    padding-left: var(--space-3);
+    margin-bottom: var(--space-3);
+}
+
+.about-kujas ul li {
+    font-size: var(--text-lg);
+    line-height: 1.6;
+    margin-bottom: var(--space-2);
+    color: var(--neutral-400);
+}
+
+.about-kujas strong {
+    color: var(--primary-color);
+}
+
+.about-kujas a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-kujas a:hover {
+    color: var(--accent-color);
+}
+
+.about-kujas .contact {
+    background-color: var(--neutral-100);
+    padding: var(--space-3);
+    border-radius: 4px;
+    margin-top: var(--space-5);
+}
+
+.main-footer {
+    border-top: 1px solid var(--neutral-200);
+    padding: var(--space-5) var(--space-2);
+    background: white;
+}
+
+.main-footer .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-5);
+    padding: 0 var(--space-2) var(--space-5);
+    border-bottom: 1px solid var(--neutral-200);
+}
+
+.main-footer .container .first {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-5);
+}
+
+.main-footer .container .first .first1 h1,
+.main-footer .container .first .first2 h1,
+.main-footer .container .second h1 {
+    font-size: var(--text-xl);
+    font-weight: 800;
+    margin-bottom: var(--space-3);
+    color: var(--primary-dark);
+}
+
+.main-footer .container .first .first2 ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+}
+
+.main-footer .container .special h1 {
+    font-size: var(--text-lg);
+    background-color: var(--primary-color);
+    color: white;
+    padding: var(--space-2) var(--space-3);
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.main-footer .container .special h1:hover {
+    background: white;
+    color: var(--primary-color);
+    box-shadow: 0 0 0 2px var(--primary-color);
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        padding: var(--space-3) 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: block;
+    }
+
+    .main-nav .third ol {
+        flex-direction: column;
+        gap: var(--space-2);
+    }
+
+    .main-nav .first {
+        justify-content: center;
+    }
+
+    .main-nav .second {
+        padding: var(--space-3);
+    }
+
+    .about-kujas {
+        padding: var(--space-3) var(--space-2);
+    }
+
+    .about-kujas .content {
+        padding: var(--space-3);
+    }
+
+    .about-kujas h1 {
+        font-size: var(--text-2xl);
+    }
+
+    .about-kujas h2 {
+        font-size: var(--text-xl);
+    }
+
+    .about-kujas p,
+    .about-kujas ul li {
+        font-size: var(--text-base);
+    }
+}
+
+@media (max-width: 480px) {
+    .main-nav .first span {
+        font-size: var(--text-xs);
+    }
+
+    .main-nav .third ol {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-kujas h1 {
+        font-size: var(--text-xl);
+    }
+
+    .about-kujas h2 {
+        font-size: var(--text-lg);
+    }
+
+    .about-kujas p,
+    .about-kujas ul li {
+        font-size: var(--text-sm);
+    }
+
+    .about-kujas .contact {
+        padding: var(--space-2);
+    }
+}

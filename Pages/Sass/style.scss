@@ -1,0 +1,75 @@
+@import "queries";
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Rubik", serif;
+}
+
+#NavBar{
+    width: 100%;
+    
+    background: white;
+   
+    max-height: 120px;
+    border-bottom: 1px rgba(0, 0, 0, 0.26) solid;
+
+    .NavBarItem-Logo{
+        div{
+            margin: 0;
+            img{
+                margin: 0;
+                
+            }
+        }
+    }
+    .NavBarItem-Links{
+        ol{
+
+            list-style: none;
+            gap: 1rem;
+            li{
+                a{
+                    font-size: 0.8rem;
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: black;
+                    padding-bottom: 10px;
+                }
+                a:hover{
+                    border-bottom: 2px solid black;
+                }
+            }
+        }
+    }
+
+}
+body{
+   width: 100%;
+   height: 100vh;
+   background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url(/Assets/Images/IMG-20200218-WA0088.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+
+   background-attachment: fixed;
+   background-color: rgba(255, 255, 255, 0.411);
+
+}
+
+.HeroSection{
+   
+
+   display: flex;
+   justify-content: center;
+   .SectionContainer{
+
+    
+    border-left: 1px rgba(0, 0, 0, 0.26) solid;
+    border-right: 1px rgba(0, 0, 0, 0.26) solid;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.16);
+   }
+}
+
+ 
